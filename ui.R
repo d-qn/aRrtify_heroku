@@ -25,7 +25,7 @@ ui <- fluidPage(
     sidebarPanel(
       fileInput("upload", h4("Upload an image"),
                 accept = c('image/png', 'image/jpeg', 'image/gif', 'image/jpg')),
-      sliderInput("longest_dim", "Resolution (rough - more detailed)",
+      sliderInput("longest_dim", "Resolution",
                   min = 40, max = 140, value = 80),
       selectInput(
         "rtype", "Choose a transformation", 
