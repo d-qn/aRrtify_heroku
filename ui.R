@@ -44,7 +44,7 @@ ui <- fluidPage(
     tags$a(href="https://twitter.com/duc_qn", "Duc-Quang Nguyen."),
     "Shamelessly based on ", 
     tags$a(href="https://github.com/gkaramanis/aRtist", "Georgios Karamanis"),
-    "R code. Original idea by", 
+    "R ggplot2 code. Original idea by", 
     tags$a(href="https://twitter.com/elanaEllesce", "Elana Levin Schtulberg:"),
     "check ", tags$a(href="https://blog.datawrapper.de/stacked-bar-chart-art/", 
                      "her datawrapper post"),  
