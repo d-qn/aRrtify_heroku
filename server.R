@@ -9,11 +9,9 @@ server <- function(input, output, session) {
     } else {
       loadImageResize(inFile$datapath, input$longest_dim)
     }
-  }) %>% 
-    bindCache(input$upload, input$longest_dim)
+  })
   
-  artype <- reactive(input$rtype) %>% 
-    bindCache(input$rtype)
+  artype <- reactive(input$rtype)
   
   shape <- reactive({
     if(!is.null(input$shape) ) {
@@ -27,8 +25,7 @@ server <- function(input, output, session) {
              stop("Invalid input shape")
       )
     }
-  }) %>% 
-    bindCache(input$shape)
+  })
   
   output$ui <- renderUI({
     if (is.null(img()))
@@ -101,7 +98,5 @@ server <- function(input, output, session) {
         )
       }   
     } 
-  }) %>% 
-    bindCache(input$upload, input$rtype, input$longest_dim, 
-              input$shape, input$bgcol, input$fgcol)
+  })
 }
