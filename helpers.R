@@ -172,12 +172,7 @@ portaitAscii <- function(img) {
     scale_y_reverse() +
     coord_fixed() +
     theme_void() 
-  
-  # # Find width of output
-  # w <- max(img_df$x)
-  # # Keep odd lines to prevent stretching
-  # txt_df <- img_df %>%
-  #   filter(y %% 2 == 1)
+
 }
 
 # https://stackoverflow.com/questions/34801607/shiny-data-persistence-in-renderui

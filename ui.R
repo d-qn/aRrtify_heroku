@@ -5,6 +5,7 @@ thematic_on(bg = "auto")
 
 ui <- fluidPage(
   tags$head(
+    includeHTML(("google-analytics.html")),
     tags$link(href = "https://fonts.googleapis.com/css?family=Roboto+Mono", rel = "stylesheet"),
     tags$style(HTML('
       * {
